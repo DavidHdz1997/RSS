@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="global.master.cs" Inherits="BackRSS.global" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge", "chrome=1">
+<meta name="description" content="Representative & Sorting Service S.A. de C.V.">
+<meta name="keywords" content="RSS">
+<meta name="author" content="rsssacv.com">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Representative & Sorting Service S.A. de C.V.</title>
+<!--
+App Starter Template
+http://www.templatemo.com/tm-492-app-starter
+-->
+<link rel="stylesheet" href="Front/css/bootstrap.min.css" />
+<link rel="stylesheet" href="Front/css/animate.css" />
+<link rel="stylesheet" href="Front/css/font-awesome.min.css" />
+
+<link rel="stylesheet" href="Front/css/magnific-popup.css" />
+
+<link rel="stylesheet" href="Front/css/owl.theme.css" />
+<link rel="stylesheet" href="Front/css/owl.carousel.css" />
+
+<link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css' />
+
+<!-- Main css -->
+<link rel="stylesheet" href="Front/css/style.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-pulse"></div>
+</div>
+
+
+
+<!-- Navigation Section -->
+
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+
+		<div class="navbar-header">
+			<button type ="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+            <a><img src="Front/images/LogoCabecera.png" class="img-responsive" alt="RSS" /></a>
+		</div>
+
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home" class="smoothScroll">Inicio</a></li>
+				<li><a href="#about" class="smoothScroll">¿Quienes Somos?</a></li>
+				<li><a href="#screenshot" class="smoothScroll">Servicios</a></li>
+                <li><a href="#pricing" class="smoothScroll">Bolsa de Trabajo</a></li>
+                <li><a href="#newsletter" class="smoothScroll">Sugerencias</a></li>
+        		<li><a href="#" data-toggle="modal" data-target="#modal1">Contacto</a></li>
+                <li><a href="/Login.aspx" class="smoothScroll">Iniciar Sesion</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+<!-- Footer Section -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+               <div class="col-md-8 col-sm-6">
+                    <div class="
+                        footer-copyright" data-wow-delay="0.4s">
+                         <p>Copyright &copy; Representative & Sorting Service S.A. de C.V.
+                         <span>||</span> 
+                         2019</p>
+                    </div>
+               </div>
+
+			<%--<div class="col-md-4 col-sm-6">
+				<ul class="wow fadeInUp social-icon" data-wow-delay="0.8s">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-google-plus"></a></li>
+                         <li><a href="#" class="fa fa-dribbble"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>--%>
+			
+		</div>
+	</div>
+</footer>
+
+
+
+<!-- Back top -->
+
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+<!-- SCRIPTS -->
+
+<script src="Front/js/jquery.js"></script>
+<script src="Front/js/bootstrap.min.js"></script>
+<script src="Front/js/jquery.magnific-popup.min.js"></script>
+<script src="Front/js/magnific-popup-options.js"></script>
+<script src="Front/js/owl.carousel.min.js"></script>
+<script src="Front/js/smoothscroll.js"></script>
+<script src="Front/js/wow.min.js"></script>
+<script src="Front/js/custom.js"></script>
+        <!-- Este script permite mantener la posición de la página cuando se refresca ***************** -->
+<script>
+window.onload=function(){
+var pos=window.name || 0;
+window.scrollTo(0,pos);
+}
+window.onunload=function(){
+window.name=self.pageYOffset || (document.documentElement.scrollTop+document.body.scrollTop);
+}
+</script>
+<!-- Se cierra el Script --> 
+
+        
+
+<%--<script type="text/javascript">
+ var vsid = "sa79154";
+ (function() { 
+ var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+  vsjs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.virtualspirits.com/vsa/chat-'+vsid+'.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
+ })();
+</script>--%>
+
+
+    </form>
+</body>
+</html>
+
